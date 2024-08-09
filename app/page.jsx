@@ -2,6 +2,7 @@ import Photo from "@/components/Photo";
 import Social from "@/components/Social";
 import Stats from "@/components/Stats";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 import { FiDownload } from "react-icons/fi";
 
 const Home = () => {
@@ -25,16 +26,21 @@ const Home = () => {
             {/* btn and social */}
 
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <Button
-                varient="outline"
-                size="lg"
-                className="uppercase flex items-center gap-2"
-              >
-                <span>Downloade CV</span>
-                <FiDownload className="text-xl" />
-              </Button>
+              <Link href="/assets/resume/Resume.pdf" target="_blank">
+                <Button
+                  varient="outline"
+                  size="lg"
+                  className="uppercase flex items-center gap-2"
+                >
+                  <span>Downloade CV</span>
+                  <FiDownload className="text-xl" />
+                </Button>
+              </Link>
               <div className="mt-8 xl:mb-8">
-                <Social containerStyles="flex gap-8" iconStyles="w-9 h-9 border border-accent rounded-full flex justify-center items-center text-accent text-base hover:bg-accent hover:text-primary hover:transition-all duration-500"  />
+                <Social
+                  containerStyles="flex gap-8"
+                  iconStyles="w-9 h-9 border border-accent rounded-full flex justify-center items-center text-accent text-base hover:bg-accent hover:text-primary hover:transition-all duration-500"
+                />
               </div>
             </div>
           </div>
@@ -47,7 +53,6 @@ const Home = () => {
       </div>
 
       <Stats />
-
     </section>
   );
 };

@@ -35,6 +35,10 @@ const about = {
       fieldValue: "(+91) 9120508661",
     },
     {
+      fieldName: "Email",
+      fieldValue: "vineetprajapati2202@gmail.com",
+    },
+    {
       fieldName: "Experience",
       fieldValue: "Fresher",
     },
@@ -42,10 +46,7 @@ const about = {
       fieldName: "Nationality",
       fieldValue: "Indian",
     },
-    {
-      fieldName: "Email",
-      fieldValue: "vineetprajapati2202@gmail.com",
-    },
+    
     {
       fieldName: "Freelance",
       fieldValue: "Available",
@@ -61,7 +62,7 @@ const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My Experience",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, repellendus.",
+    "Fresher",
   items: [
     {
       company: "",
@@ -166,10 +167,10 @@ const Resume = () => {
             <TabsContent value="experience" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-lg">
                 <h3 className="text-4xl font-bold">{experience.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                <p className="max-w-[600px] text-white/60 mx-auto">
                   {experience.description}
                 </p>
-                <ScrollArea className="h-[400px]">
+                {/* <ScrollArea className="h-[400px]">
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                     {experience.items.map((item, index) => {
                       return (
@@ -189,13 +190,13 @@ const Resume = () => {
                       );
                     })}
                   </ul>
-                </ScrollArea>
+                </ScrollArea> */}
               </div>
             </TabsContent>
             <TabsContent value="education" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-lg">
                 <h3 className="text-4xl font-bold">{education.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                <p className="flex max-w-[600px] text-white/60 mx-auto ">
                   {education.description}
                 </p>
                 <ScrollArea className="h-[400px]">

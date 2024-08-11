@@ -30,7 +30,7 @@ const info = [
   {
     icon: <FaMapMarkerAlt />,
     title: "Address",
-    description: "Availabel 24/7 Online",
+    description: "Availabel Online 24/7 ",
   },
 ];
 
@@ -48,12 +48,17 @@ const Contact = () => {
         <div className="flex flex-col xl:flex-row gap-[30px]">
           {/* form */}
           <div className="xl:w-[54%] order-2 xl:order-none">
-            <form action="mailto:vineetprajapati2203@gmail.com" className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
+            <form
+              action="mailto:vineetprajapati2203@gmail.com"
+              className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl"
+            >
               <h3 className="text-4xl text-accent">Let&apos;s work together</h3>
               <p className="text-white/60">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
-                repellat aliquid magnam autem esse officiis voluptate et eius
-                fugiat ipsam.
+                "Partner with a skilled web developer dedicated to turning your
+                ideas into a polished, responsive, and user-friendly website.
+                Let's collaborate to bring your vision to life with clean code,
+                modern design, and seamless functionality. Together, we can
+                create a web experience that stands out."
               </p>
               {/* input */}
               {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -83,7 +88,9 @@ const Contact = () => {
                 placeholder="Type you message here."
               /> */}
               {/* btn */}
-              <Button type="submit" className="max-w-40">Send message</Button>
+              <Button type="submit" className="max-w-40">
+                Send message
+              </Button>
             </form>
           </div>
           {/* info */}

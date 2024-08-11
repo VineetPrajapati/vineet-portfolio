@@ -23,7 +23,7 @@ const projects = [
     category: "frontend",
     title: "Apple iPhone 15 Pro",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque beatae eum veritatis repudiandae maiores. In.",
+      "Created an immersive user interface website for the Apple iPhone 15 Pro, utilizing React.js, Three.js, GSAP, and TailwindCSS. By implementing cutting-edge technologies, I delivered captivating visual experiences and seamless interactions. My focus was on crafting intuitive and user-friendly interfaces that effectively showcase the features and capabilities of the iPhone 15 Pro.",
     stack: [{ name: "React.js" }, { name: "Three.js" }, { name: "GSAP" }, { name: "TailwindCSS" }],
     image: "/assets/work/thumb1.png",
     live: "https://apple-iphone15-pro.netlify.app/",
@@ -34,7 +34,7 @@ const projects = [
     category: "frontend",
     title: "Music School Website",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque beatae eum veritatis repudiandae maiores. In.",
+      "Built a modern and responsive user interface for a music school website using Next.js. By implementing sleek and customizable designs with TailwindCSS, I enhanced the user experience. Additionally, I leveraged the power of Aceternity UI to create intuitive and visually appealing elements tailored specifically for the music education industry",
     stack: [{ name: "Next.js" }, { name: "TailwindCSS" }, { name: "Aceternity UI" }],
     image: "/assets/work/thumb2.png",
     live: "https://welcometotheworldofmusic.netlify.app/",
@@ -45,7 +45,7 @@ const projects = [
     category: "frontend",
     title: "Nike Website - UI/UX",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque beatae eum veritatis repudiandae maiores. In.",
+      "Designed and developed the user interface for Nike's website using React.js and TailwindCSS, implementing responsive and visually captivating designs to enhance the user experience. I collaborated cross-functionally to create intuitive interfaces that align with Nike's brand identity and meet customer expectations.",
     stack: [{ name: "React.js" }, { name: "TailwindCSS" }],
     image: "/assets/work/thumb3.png",
     live: "https://nike-landingpage-ui.netlify.app/",

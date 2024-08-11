@@ -24,7 +24,12 @@ const projects = [
     title: "Apple iPhone 15 Pro",
     description:
       "Created an immersive user interface website for the Apple iPhone 15 Pro, utilizing React.js, Three.js, GSAP, and TailwindCSS. By implementing cutting-edge technologies, I delivered captivating visual experiences and seamless interactions. My focus was on crafting intuitive and user-friendly interfaces that effectively showcase the features and capabilities of the iPhone 15 Pro.",
-    stack: [{ name: "React.js" }, { name: "Three.js" }, { name: "GSAP" }, { name: "TailwindCSS" }],
+    stack: [
+      { name: "React.js" },
+      { name: "Three.js" },
+      { name: "GSAP" },
+      { name: "TailwindCSS" },
+    ],
     image: "/assets/work/thumb1.png",
     live: "https://apple-iphone15-pro.netlify.app/",
     github: "https://github.com/VineetPrajapati/apple_website",
@@ -35,7 +40,11 @@ const projects = [
     title: "Music School Website",
     description:
       "Built a modern and responsive user interface for a music school website using Next.js. By implementing sleek and customizable designs with TailwindCSS, I enhanced the user experience. Additionally, I leveraged the power of Aceternity UI to create intuitive and visually appealing elements tailored specifically for the music education industry",
-    stack: [{ name: "Next.js" }, { name: "TailwindCSS" }, { name: "Aceternity UI" }],
+    stack: [
+      { name: "Next.js" },
+      { name: "TailwindCSS" },
+      { name: "Aceternity UI" },
+    ],
     image: "/assets/work/thumb2.png",
     live: "https://welcometotheworldofmusic.netlify.app/",
     github: "https://github.com/VineetPrajapati/music-app",
@@ -50,6 +59,91 @@ const projects = [
     image: "/assets/work/thumb3.png",
     live: "https://nike-landingpage-ui.netlify.app/",
     github: "https://github.com/VineetPrajapati/nike",
+  },
+  {
+    num: "04",
+    category: "frontend",
+    title: "gpt-03",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dignissimos porro perferendis, ex recusandae voluptate maxime assumenda est mollitia labore ab saepe, necessitatibus fuga? Nesciunt eaque nobis hic accusantium illo?",
+    stack: [{ name: "React.js" }, { name: "Javascript" }, { name: "CSS" }],
+    image: "/assets/work/thumb4.png",
+    live: "https://gpt-o3.netlify.app/",
+    github: "https://github.com/VineetPrajapati/gpt3",
+  },
+  {
+    num: "05",
+    category: "frontend",
+    title: "Brainwave",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dignissimos porro perferendis, ex recusandae voluptate maxime assumenda est mollitia labore ab saepe, necessitatibus fuga? Nesciunt eaque nobis hic accusantium illo?",
+    stack: [
+      { name: "React.js" },
+      { name: "Javascript" },
+      { name: "TailwindCSS" },
+    ],
+    image: "/assets/work/thumb5.png",
+    live: "https://brainwave-ui-app.netlify.app/",
+    github: "https://github.com/VineetPrajapati/Brainwave",
+  },
+  {
+    num: "06",
+    category: "frontend",
+    title: "Modern Bank",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dignissimos porro perferendis, ex recusandae voluptate maxime assumenda est mollitia labore ab saepe, necessitatibus fuga? Nesciunt eaque nobis hic accusantium illo?",
+    stack: [
+      { name: "React.js" },
+      { name: "Javascript" },
+      { name: "TailwindCSS" },
+    ],
+    image: "/assets/work/thumb6.png",
+    live: "https://modernbankingsystem.netlify.app/",
+    github: "https://github.com/VineetPrajapati/bank_modern_app",
+  },
+  {
+    num: "07",
+    category: "frontend",
+    title: "Family Golf",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dignissimos porro perferendis, ex recusandae voluptate maxime assumenda est mollitia labore ab saepe, necessitatibus fuga? Nesciunt eaque nobis hic accusantium illo?",
+    stack: [{ name: "HTMl" }, { name: "CSS" }, { name: "Javascript" }],
+    image: "/assets/work/thumb7.png",
+    live: "https://symphonious-griffin-e85181.netlify.app/",
+    github: "https://github.com/VineetPrajapati/Sidecup-Family-Golf---Project1",
+  },
+  {
+    num: "08",
+    category: "frontend",
+    title: "Netflix",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dignissimos porro perferendis, ex recusandae voluptate maxime assumenda est mollitia labore ab saepe, necessitatibus fuga? Nesciunt eaque nobis hic accusantium illo?",
+    stack: [{ name: "HTMl" }, { name: "CSS" }, { name: "Javascript" }],
+    image: "/assets/work/thumb8.png",
+    live: "https://joyful-sopapillas-df396f.netlify.app/",
+    github: "https://github.com/VineetPrajapati/Netflix-Clone",
+  },
+  {
+    num: "09",
+    category: "frontend",
+    title: "Weather app",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dignissimos porro perferendis, ex recusandae voluptate maxime assumenda est mollitia labore ab saepe, necessitatibus fuga? Nesciunt eaque nobis hic accusantium illo?",
+    stack: [{ name: "React.js" }, { name: "Javascript" }, { name: "TailwindCSS" }, { name: "OpenWeather" }],
+    image: "/assets/work/thumb9.png",
+    live: "https://o1weather.netlify.app/",
+    github: "https://github.com/VineetPrajapati/weather_app",
+  },
+  {
+    num: "10",
+    category: "frontend",
+    title: "Unique Password Generator",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dignissimos porro perferendis, ex recusandae voluptate maxime assumenda est mollitia labore ab saepe, necessitatibus fuga? Nesciunt eaque nobis hic accusantium illo?",
+    stack: [{ name: "React.js" }, { name: "Javascript" }, { name: "TailwindCSS" }, { name: "Hooks" }],
+    image: "/assets/work/thumb10.png",
+    live: "https://uniquepasswordgeneration.netlify.app/",
+    github: "https://github.com/VineetPrajapati/passwordGenerator",
   },
 ];
 
@@ -85,7 +179,7 @@ const Work = () => {
               {/* <h2 className="text-[42px] font-bold leading-normal text-white group-hover:text-accent transition-all duration-500 capitalize">
                 {project.category}
               </h2> */}
-              
+
               {/* project title */}
               <h2 className="text-[42px] font-bold leading-normal text-white group-hover:text-accent transition-all duration-500 capitalize">
                 {project.title}
@@ -153,9 +247,9 @@ const Work = () => {
               {projects.map((project, index) => {
                 return (
                   <SwiperSlide key={index} className="w-full">
-                    <div className="h-[460px] rounded-lg relative group flex justify-center items-center bg-pink-50/20">
+                    <div className="h-full rounded-lg relative group flex justify-center items-center bg-pink-50/20">
                       {/* overlay */}
-                      <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
+                      <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10" />
 
                       {/* image */}
                       <div className="relative w-full h-full">
@@ -173,8 +267,8 @@ const Work = () => {
 
               {/* slider button */}
               <WorkSliderBtns
-                containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none"
-                btnStyles="bg-accent opacity-50 rounded-full hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
+                containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] z-20 w-full justify-between"
+                btnStyles="rounded-full hover:bg-accent-hover text-primary font-bold text-2xl text-[22px] w-[50px] h-[50px] flex justify-center items-center transition-all"
               />
             </Swiper>
           </div>

@@ -21,7 +21,7 @@ const projects = [
   {
     num: "01",
     category: "frontend",
-    title: "Apple iPhone 15 Pro",
+    title: "Apple iPhone 15 Pro  --> Desktop Friendly",
     description:
       "Created an immersive user interface website for the Apple iPhone 15 Pro, utilizing React.js, Three.js, GSAP, and TailwindCSS. By implementing cutting-edge technologies, I delivered captivating visual experiences and seamless interactions. My focus was on crafting intuitive and user-friendly interfaces that effectively showcase the features and capabilities of the iPhone 15 Pro.",
     stack: [
@@ -137,7 +137,7 @@ const projects = [
   {
     num: "10",
     category: "frontend",
-    title: "Unique Password Generator --> Desktop Friendly",
+    title: "Unique Password Generator",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dignissimos porro perferendis, ex recusandae voluptate maxime assumenda est mollitia labore ab saepe, necessitatibus fuga? Nesciunt eaque nobis hic accusantium illo?",
     stack: [{ name: "React.js" }, { name: "Javascript" }, { name: "TailwindCSS" }, { name: "Hooks" }],

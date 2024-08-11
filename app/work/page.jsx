@@ -137,7 +137,7 @@ const projects = [
   {
     num: "10",
     category: "frontend",
-    title: "Unique Password Generator",
+    title: "Unique Password Generator --> Desktop Friendly",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dignissimos porro perferendis, ex recusandae voluptate maxime assumenda est mollitia labore ab saepe, necessitatibus fuga? Nesciunt eaque nobis hic accusantium illo?",
     stack: [{ name: "React.js" }, { name: "Javascript" }, { name: "TailwindCSS" }, { name: "Hooks" }],

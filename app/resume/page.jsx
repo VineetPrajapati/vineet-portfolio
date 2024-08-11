@@ -16,9 +16,9 @@ import {
   FaCss3,
   FaJs,
   FaReact,
-  FaFigma,
   FaNodeJs,
   FaGit,
+  FaArrowCircleRight,
 } from "react-icons/fa";
 
 import { SiTailwindcss, SiNextdotjs, SiMysql } from "react-icons/si";
@@ -171,8 +171,8 @@ const Resume = () => {
             <TabsTrigger value="experience">Experience</TabsTrigger>
             <TabsTrigger value="education">Education</TabsTrigger>
             <TabsTrigger value="skills">Skills</TabsTrigger>
+            <TabsTrigger value="projects">Projets</TabsTrigger>{" "}
             <TabsTrigger value="about">About me</TabsTrigger>
-            <TabsTrigger value="projects">Projets</TabsTrigger>
           </TabsList>
 
           <div className="min-h-[70vh] w-full">
@@ -295,11 +295,8 @@ const Resume = () => {
               <div className="flex flex-col gap-[30px] text-center xl:text-lg">
                 <h3 className="text-4xl font-bold text-white">Work/Projects</h3>
                 <Link href="/work">
-                  <Button
-                    varient="outline"
-                    className="uppercase gap-2"
-                  >
-                    Work
+                  <Button varient="outline" className="uppercase gap-2">
+                    Work <FaArrowCircleRight />
                   </Button>
                 </Link>
               </div>

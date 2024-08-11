@@ -247,9 +247,9 @@ const Work = () => {
               {projects.map((project, index) => {
                 return (
                   <SwiperSlide key={index} className="w-full">
-                    <div className="h-full rounded-lg relative group flex justify-center items-center bg-pink-50/20">
+                    <div className="h-[460px] rounded-lg relative group flex justify-center items-center bg-pink-50/20">
                       {/* overlay */}
-                      <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10" />
+                      <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
 
                       {/* image */}
                       <div className="relative w-full h-full">
@@ -267,8 +267,8 @@ const Work = () => {
 
               {/* slider button */}
               <WorkSliderBtns
-                containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] z-20 w-full justify-between"
-                btnStyles="rounded-full hover:bg-accent-hover text-primary font-bold text-2xl text-[22px] w-[50px] h-[50px] flex justify-center items-center transition-all"
+                containerStyles="flex absolute right-0 bottom-[calc(50%_-_22px)] z-20 w-full justify-between"
+                btnStyles="bg-accent opacity-50 rounded-full hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
               />
             </Swiper>
           </div>

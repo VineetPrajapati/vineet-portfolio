@@ -1,5 +1,6 @@
 "use client";
 
+import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
@@ -9,6 +10,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import {
   FaHtml5,
   FaCss3,
@@ -16,14 +18,16 @@ import {
   FaReact,
   FaFigma,
   FaNodeJs,
+  FaGit,
 } from "react-icons/fa";
 
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import { SiTailwindcss, SiNextdotjs, SiMysql } from "react-icons/si";
+import { TbBrandCpp } from "react-icons/tb";
 
 const about = {
   title: "About Me",
   description:
-    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, ullam.",
+    "Passionate Computer Science undergrad specializing in front-end web development. Skilled in HTML, CSS, and JavaScript, with handson experience in React. Proactive in exploring emerging trends to enhance user experiences. Strong problem-solving abilities honed through coursework and personal projects. Eager to contribute to front-end development teams, leveraging academic knowledge to deliver clean, intuitive interfaces.",
 
   info: [
     {
@@ -36,7 +40,7 @@ const about = {
     },
     {
       fieldName: "Email",
-      fieldValue: "vineetprajapati2202@gmail.com",
+      fieldValue: "vineetprajapati2203@gmail.com",
     },
     {
       fieldName: "Experience",
@@ -46,7 +50,7 @@ const about = {
       fieldName: "Nationality",
       fieldValue: "Indian",
     },
-    
+
     {
       fieldName: "Freelance",
       fieldValue: "Available",
@@ -61,8 +65,7 @@ const about = {
 const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My Experience",
-  description:
-    "Fresher",
+  description: "Fresher",
   items: [
     {
       company: "",
@@ -80,8 +83,8 @@ const experience = {
 const education = {
   icon: "/assets/resume/cap.svg",
   title: "My education",
-  description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, repellendus.",
+  // description:
+  //   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, repellendus.",
   items: [
     {
       institution: "Chandigarh University",
@@ -103,9 +106,13 @@ const education = {
 
 const skills = {
   title: "My Skills",
-  description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, asperiores?",
+  // description:
+  // "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, asperiores?",
   skillList: [
+    {
+      icon: <TbBrandCpp />,
+      name: "C++",
+    },
     {
       icon: <FaHtml5 />,
       name: "html5",
@@ -135,8 +142,12 @@ const skills = {
       name: "node.js",
     },
     {
-      icon: <FaFigma />,
-      name: "figma",
+      icon: <SiMysql />,
+      name: "MySql",
+    },
+    {
+      icon: <FaGit />,
+      name: "git",
     },
   ],
 };
@@ -161,6 +172,7 @@ const Resume = () => {
             <TabsTrigger value="education">Education</TabsTrigger>
             <TabsTrigger value="skills">Skills</TabsTrigger>
             <TabsTrigger value="about">About me</TabsTrigger>
+            <TabsTrigger value="projects">Projets</TabsTrigger>
           </TabsList>
 
           <div className="min-h-[70vh] w-full">
@@ -237,7 +249,9 @@ const Resume = () => {
                           <TooltipProvider delayDuration={100}>
                             <Tooltip>
                               <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
-                                <div className="text-6xl group-hover:text-accent transition-all duration-300">{skill.icon}</div>
+                                <div className="text-6xl group-hover:text-accent transition-all duration-300">
+                                  {skill.icon}
+                                </div>
                               </TooltipTrigger>
                               <TooltipContent>
                                 <p className="capitalize">{skill.name}</p>
@@ -251,18 +265,43 @@ const Resume = () => {
                 </div>
               </div>
             </TabsContent>
-            <TabsContent value="about" className="w-full text-center xl:text-left">
+            <TabsContent
+              value="about"
+              className="w-full text-center xl:text-left"
+            >
               <div className="flex flex-col gap-[30px]">
                 <h3 className="text-4xl font-bold">{about.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{about.description}</p>
+                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 text-justify">
+                  {about.description}
+                </p>
                 <ul className="grid grid-cols-1 gap-y-6 max-w-[800px] mx-auto xl:mx-0 ">
-                  {about.info.map((item, index)=> {
-                    return <li key={index} className="flex items-center justify-center xl:justify-start gap-4 flex-wrap">
-                         <span className="text-white/60">{item.fieldName} : </span>
-                         <span className="text-xl ">{item.fieldValue}</span>
-                    </li>
+                  {about.info.map((item, index) => {
+                    return (
+                      <li
+                        key={index}
+                        className="flex items-center justify-center xl:justify-start gap-4 flex-wrap"
+                      >
+                        <span className="text-white/60">
+                          {item.fieldName} :{" "}
+                        </span>
+                        <span className="text-xl ">{item.fieldValue}</span>
+                      </li>
+                    );
                   })}
                 </ul>
+              </div>
+            </TabsContent>
+            <TabsContent value="projects" className="w-full">
+              <div className="flex flex-col gap-[30px] text-center xl:text-lg">
+                <h3 className="text-4xl font-bold text-white">Work/Projects</h3>
+                <Link href="/work">
+                  <Button
+                    varient="outline"
+                    className="uppercase gap-2"
+                  >
+                    Work
+                  </Button>
+                </Link>
               </div>
             </TabsContent>
           </div>

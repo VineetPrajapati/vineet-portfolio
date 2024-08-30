@@ -21,6 +21,23 @@ const projects = [
   {
     num: "01",
     category: "frontend",
+    title: "Carepulse",
+    description:
+      "CarePulse is a modern web application designed to revolutionize the doctor's appointment process, making it easier for both patients and healthcare providers to connect. Built with a powerful tech stack, CarePulse delivers a seamless, user-friendly experience.",
+    stack: [
+      { name: "Next.js" },
+      { name: "TailwindCSS" },
+      { name: "Shadcn/UI" },
+      { name: "Appwrite" },
+      { name: "Sentry" },
+    ],
+    image: "/assets/work/carepulse.png",
+    live: "https://careplus-taupe.vercel.app/",
+    github: "https://github.com/VineetPrajapati/careplus",
+  },
+  {
+    num: "02",
+    category: "frontend",
     title: "Apple iPhone 15 Pro  --> Desktop Friendly",
     description:
       "Created an immersive user interface website for the Apple iPhone 15 Pro, utilizing React.js, Three.js, GSAP, and TailwindCSS. By implementing cutting-edge technologies, I delivered captivating visual experiences and seamless interactions. My focus was on crafting intuitive and user-friendly interfaces that effectively showcase the features and capabilities of the iPhone 15 Pro.",
@@ -35,7 +52,7 @@ const projects = [
     github: "https://github.com/VineetPrajapati/apple_website",
   },
   {
-    num: "02",
+    num: "03",
     category: "frontend",
     title: "Music School Website",
     description:
@@ -50,7 +67,7 @@ const projects = [
     github: "https://github.com/VineetPrajapati/music-app",
   },
   {
-    num: "03",
+    num: "04",
     category: "frontend",
     title: "Nike Website - UI/UX",
     description:
@@ -61,7 +78,7 @@ const projects = [
     github: "https://github.com/VineetPrajapati/nike",
   },
   {
-    num: "04",
+    num: "05",
     category: "frontend",
     title: "gpt-03",
     description:
@@ -72,7 +89,7 @@ const projects = [
     github: "https://github.com/VineetPrajapati/gpt3",
   },
   {
-    num: "05",
+    num: "06",
     category: "frontend",
     title: "Brainwave",
     description:
@@ -87,7 +104,7 @@ const projects = [
     github: "https://github.com/VineetPrajapati/Brainwave",
   },
   {
-    num: "06",
+    num: "07",
     category: "frontend",
     title: "Modern Bank",
     description:
@@ -102,7 +119,7 @@ const projects = [
     github: "https://github.com/VineetPrajapati/bank_modern_app",
   },
   {
-    num: "07",
+    num: "08",
     category: "frontend",
     title: "Family Golf",
     description:
@@ -113,7 +130,7 @@ const projects = [
     github: "https://github.com/VineetPrajapati/Sidecup-Family-Golf---Project1",
   },
   {
-    num: "08",
+    num: "09",
     category: "frontend",
     title: "Netflix",
     description:
@@ -124,23 +141,33 @@ const projects = [
     github: "https://github.com/VineetPrajapati/Netflix-Clone",
   },
   {
-    num: "09",
+    num: "010",
     category: "frontend",
     title: "Weather app",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dignissimos porro perferendis, ex recusandae voluptate maxime assumenda est mollitia labore ab saepe, necessitatibus fuga? Nesciunt eaque nobis hic accusantium illo?",
-    stack: [{ name: "React.js" }, { name: "Javascript" }, { name: "TailwindCSS" }, { name: "OpenWeather" }],
+    stack: [
+      { name: "React.js" },
+      { name: "Javascript" },
+      { name: "TailwindCSS" },
+      { name: "OpenWeather" },
+    ],
     image: "/assets/work/thumb9.png",
     live: "https://o1weather.netlify.app/",
     github: "https://github.com/VineetPrajapati/weather_app",
   },
   {
-    num: "10",
+    num: "11",
     category: "frontend",
     title: "Unique Password Generator",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dignissimos porro perferendis, ex recusandae voluptate maxime assumenda est mollitia labore ab saepe, necessitatibus fuga? Nesciunt eaque nobis hic accusantium illo?",
-    stack: [{ name: "React.js" }, { name: "Javascript" }, { name: "TailwindCSS" }, { name: "Hooks" }],
+    stack: [
+      { name: "React.js" },
+      { name: "Javascript" },
+      { name: "TailwindCSS" },
+      { name: "Hooks" },
+    ],
     image: "/assets/work/thumb10.png",
     live: "https://uniquepasswordgeneration.netlify.app/",
     github: "https://github.com/VineetPrajapati/passwordGenerator",

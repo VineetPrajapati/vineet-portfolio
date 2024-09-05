@@ -29,6 +29,7 @@ const projects = [
       { name: "TailwindCSS" },
       { name: "Shadcn/UI" },
       { name: "Appwrite" },
+      { name: "Twilio" },
       { name: "Sentry" },
     ],
     image: "/assets/work/carepulse.png",

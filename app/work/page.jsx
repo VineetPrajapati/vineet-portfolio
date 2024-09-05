@@ -21,7 +21,7 @@ const projects = [
   {
     num: "01",
     category: "frontend",
-    title: "Carepulse",
+    title: "Patient Management System",
     description:
       "CarePulse is a modern web application designed to revolutionize the doctor's appointment process, making it easier for both patients and healthcare providers to connect. Built with a powerful tech stack, CarePulse delivers a seamless, user-friendly experience.",
     stack: [

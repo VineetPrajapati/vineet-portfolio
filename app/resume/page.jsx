@@ -66,7 +66,7 @@ const about = {
 const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My Experience",
-  description: "Fresher",
+  description: "Fresher !",
   items: [
     {
       company: "",

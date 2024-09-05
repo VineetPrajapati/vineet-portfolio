@@ -20,6 +20,7 @@ import {
   FaGit,
   FaArrowCircleRight,
 } from "react-icons/fa";
+import { FiDownload } from "react-icons/fi";
 
 import { SiTailwindcss, SiNextdotjs, SiMysql } from "react-icons/si";
 import { TbBrandCpp } from "react-icons/tb";
@@ -104,6 +105,69 @@ const education = {
   ],
 };
 
+const certificate = {
+  icon: "/assets/resume/cap.svg",
+  title: "My Certificates",
+  // description:
+  //   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, repellendus.",
+  items: [
+    {
+      institution: "Internshala",
+      degree: "Full Stack Development",
+      duration: "Jul 31, 2022",
+      button: "/assets/certificates/web-dev-training-certificate.pdf"
+    },
+    {
+      institution: "NPTEL",
+      degree: "Software Testing",
+      duration: "Jul-Oct 2022",
+      button: "/assets/certificates/software-testing.jpg"
+    },
+    {
+      institution: "NPTEL",
+      degree: "Data Mining",
+      duration: "Jan-Mar 2023",
+      button: "/assets/certificates/data-mining.jpg"
+    },
+    {
+      institution: "Coursera",
+      degree: "Computer Vision for Engineering and Science",
+      duration: "Oct 30, 2023",
+      button: "/assets/certificates/computer-vision.pdf"
+    },
+    {
+      institution: "Coursera",
+      degree: "Preparing for Google Cloud Certificate",
+      duration: "Feb 26, 2024",
+      button: "/assets/certificates/cloud-developer.pdf"
+    },
+    {
+      institution: "Udemy",
+      degree: "PowerPoint Masterclass",
+      duration: "Aug 30, 2021",
+      button: "/assets/certificates/cloud-developer.pdf"
+    },
+    {
+      institution: "Coursera",
+      degree: "NoSQL, Big Data, and Spark Foundations Specialization",
+      duration: "Mar 09, 2023",
+      button: "/assets/certificates/nosql.pdf"
+    },
+    {
+      institution: "Chandigarh University",
+      degree: "Tech Invent 2021",
+      duration: "Sept 10, 2021",
+      button: "/assets/certificates/cu.png"
+    },
+    {
+      institution: "Infosys | Springboard",
+      degree: "TypeScript Essentials & Angular",
+      duration: "Oct 10, 2022",
+      button: "/assets/certificates/typescript-angular.pdf"
+    },
+  ],
+};
+
 const skills = {
   title: "My Skills",
   // description:
@@ -171,6 +235,7 @@ const Resume = () => {
             <TabsTrigger value="experience">Experience</TabsTrigger>
             <TabsTrigger value="education">Education</TabsTrigger>
             <TabsTrigger value="skills">Skills</TabsTrigger>
+            <TabsTrigger value="certificates">Certificates</TabsTrigger>
             <TabsTrigger value="projects">Projets</TabsTrigger>{" "}
             <TabsTrigger value="about">About me</TabsTrigger>
           </TabsList>
@@ -265,6 +330,51 @@ const Resume = () => {
                 </div>
               </div>
             </TabsContent>
+
+            <TabsContent value="certificates" className="w-full h-full">
+              <div className="flex flex-col gap-[30px] text-center xl:text-lg md:h-full">
+                <h3 className="text-4xl font-bold">{certificate.title}</h3>
+                <p className="flex max-w-[600px] text-white/60 mx-auto ">
+                  {certificate.description}
+                </p>
+                <ScrollArea className="h-[400px]">
+                  <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+                    {certificate.items.map((item, index) => {
+                      return (
+                        <li
+                          key={index}
+                          className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                        >
+                          <span className="text-accent">{item.duration}</span>
+                          <h3 className="text-xl max-w-[3000px] min-h-[30px] text-center lg:text-left">
+                            {item.degree}
+                          </h3>
+                          <div className="flex items-center gap-3">
+                            <span className="bg-accent w-[6px] h-[6px] rounded-full mt-4"></span>
+                            <p className="text-white/60 mt-4 w-full ">{item.institution}</p>
+                          </div>
+
+                          <Link
+                            href={item.button}
+                            target="_blank"
+                          >
+                            <Button
+                              varient="outline"
+                              size="sm"
+                              className="uppercase flex items-center gap-2"
+                            >
+                              <span>certificate</span>
+                              <FiDownload className="text-xl" />
+                            </Button>
+                          </Link>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </ScrollArea>
+              </div>
+            </TabsContent>
+
             <TabsContent
               value="about"
               className="w-full text-center xl:text-left"

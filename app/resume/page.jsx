@@ -236,7 +236,7 @@ const Resume = () => {
             <TabsTrigger value="education">Education</TabsTrigger>
             <TabsTrigger value="skills">Skills</TabsTrigger>
             <TabsTrigger value="certificates">Certificates</TabsTrigger>
-            <TabsTrigger value="projects">Projets</TabsTrigger>{" "}
+            <TabsTrigger value="projects">Projects</TabsTrigger>{" "}
             <TabsTrigger value="about">About me</TabsTrigger>
           </TabsList>
 

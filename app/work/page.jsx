@@ -39,6 +39,23 @@ const projects = [
   {
     num: "02",
     category: "frontend",
+    title: "Patient Management System",
+    description:
+      "This fully responsive travel website is designed to provide users with a seamless and visually appealing platform for planning and managing their trips. The project focuses on delivering a smooth, modern interface that enhances the overall user experience, ensuring ease of navigation and accessibility across all devices. By combining performance optimization with thoughtful design, the website offers a reliable and engaging platform for travel planning. The design emphasizes simplicity, making it easy for users to explore destinations and manage their bookings with minimal effort.",
+    stack: [
+      { name: "React.js" },
+      { name: "TypeScript" },
+      { name: "Next.js" },
+      { name: "TailwindCSS" },
+    ],
+    image: "/assets/work/travel.png",
+    live: "https://travel-app-ten-eosin.vercel.app/",
+    github: "https://github.com/VineetPrajapati/travel_app",
+  },
+
+  {
+    num: "03",
+    category: "frontend",
     title: "Apple iPhone 15 Pro  --> Desktop Friendly",
     description:
       "Created an immersive user interface website for the Apple iPhone 15 Pro, utilizing React.js, Three.js, GSAP, and TailwindCSS. By implementing cutting-edge technologies, I delivered captivating visual experiences and seamless interactions. My focus was on crafting intuitive and user-friendly interfaces that effectively showcase the features and capabilities of the iPhone 15 Pro.",
@@ -53,7 +70,7 @@ const projects = [
     github: "https://github.com/VineetPrajapati/apple_website",
   },
   {
-    num: "03",
+    num: "04",
     category: "frontend",
     title: "Music School Website",
     description:
@@ -68,7 +85,7 @@ const projects = [
     github: "https://github.com/VineetPrajapati/music-app",
   },
   {
-    num: "04",
+    num: "05",
     category: "frontend",
     title: "Nike Website - UI/UX",
     description:
@@ -79,7 +96,7 @@ const projects = [
     github: "https://github.com/VineetPrajapati/nike",
   },
   {
-    num: "05",
+    num: "06",
     category: "frontend",
     title: "gpt-03",
     description:
@@ -90,7 +107,7 @@ const projects = [
     github: "https://github.com/VineetPrajapati/gpt3",
   },
   {
-    num: "06",
+    num: "07",
     category: "frontend",
     title: "Brainwave",
     description:
@@ -105,7 +122,7 @@ const projects = [
     github: "https://github.com/VineetPrajapati/Brainwave",
   },
   {
-    num: "07",
+    num: "08",
     category: "frontend",
     title: "Modern Bank",
     description:
@@ -120,7 +137,7 @@ const projects = [
     github: "https://github.com/VineetPrajapati/bank_modern_app",
   },
   {
-    num: "08",
+    num: "09",
     category: "frontend",
     title: "Family Golf",
     description:
@@ -131,7 +148,7 @@ const projects = [
     github: "https://github.com/VineetPrajapati/Sidecup-Family-Golf---Project1",
   },
   {
-    num: "09",
+    num: "10",
     category: "frontend",
     title: "Netflix",
     description:
@@ -142,7 +159,7 @@ const projects = [
     github: "https://github.com/VineetPrajapati/Netflix-Clone",
   },
   {
-    num: "010",
+    num: "11",
     category: "frontend",
     title: "Weather app",
     description:
@@ -158,7 +175,7 @@ const projects = [
     github: "https://github.com/VineetPrajapati/weather_app",
   },
   {
-    num: "11",
+    num: "12",
     category: "frontend",
     title: "Unique Password Generator",
     description:
@@ -174,8 +191,6 @@ const projects = [
     github: "https://github.com/VineetPrajapati/passwordGenerator",
   },
 ];
-
-Swiper;
 
 const Work = () => {
   const [project, setProject] = useState(projects[0]);
@@ -214,7 +229,9 @@ const Work = () => {
               </h2>
 
               {/* project description */}
-              <p className="text-white/60 text-justify">{project.description}</p>
+              <p className="text-white/60 text-justify">
+                {project.description}
+              </p>
 
               {/* stack */}
               <ul className="flex gap-4">

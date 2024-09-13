@@ -35,7 +35,7 @@ const projects = [
     image: "/assets/work/carepulse.png",
     live: "https://careplus-taupe.vercel.app/",
     github: "https://github.com/VineetPrajapati/careplus",
-  },
+  },   
   {
     num: "02",
     category: "frontend",
@@ -44,8 +44,8 @@ const projects = [
       "This responsive travel website offers a seamless, visually appealing platform for trip planning and management. With a focus on user-friendly design and optimized performance, it ensures easy navigation and accessibility across all devices, making travel planning simple and efficient.",
     stack: [
       { name: "React.js" },
-      { name: "TypeScript" },
       { name: "Next.js" },
+      { name: "TypeScript" },
       { name: "TailwindCSS" },
     ],
     image: "/assets/work/travel.png",

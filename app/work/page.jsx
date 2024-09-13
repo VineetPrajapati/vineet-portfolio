@@ -39,9 +39,9 @@ const projects = [
   {
     num: "02",
     category: "frontend",
-    title: "Patient Management System",
+    title: "Travel",
     description:
-      "This fully responsive travel website is designed to provide users with a seamless and visually appealing platform for planning and managing their trips. The project focuses on delivering a smooth, modern interface that enhances the overall user experience, ensuring ease of navigation and accessibility across all devices. By combining performance optimization with thoughtful design, the website offers a reliable and engaging platform for travel planning. The design emphasizes simplicity, making it easy for users to explore destinations and manage their bookings with minimal effort.",
+      "This responsive travel website offers a seamless, visually appealing platform for trip planning and management. With a focus on user-friendly design and optimized performance, it ensures easy navigation and accessibility across all devices, making travel planning simple and efficient.",
     stack: [
       { name: "React.js" },
       { name: "TypeScript" },

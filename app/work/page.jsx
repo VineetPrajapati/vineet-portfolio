@@ -32,7 +32,7 @@ const projects = [
       { name: "Twilio" },
       { name: "Sentry" },
     ],
-    image: "/assets/work/carepulse.png",
+    image: "/assets/work/carepulse.jpg",
     live: "https://careplus-taupe.vercel.app/",
     github: "https://github.com/VineetPrajapati/careplus",
   },   
@@ -48,7 +48,7 @@ const projects = [
       { name: "TypeScript" },
       { name: "TailwindCSS" },
     ],
-    image: "/assets/work/travel.png",
+    image: "/assets/work/travel.jpg",
     live: "https://travel-app-ten-eosin.vercel.app/",
     github: "https://github.com/VineetPrajapati/travel_app",
   },
@@ -65,7 +65,7 @@ const projects = [
       { name: "GSAP" },
       { name: "TailwindCSS" },
     ],
-    image: "/assets/work/thumb1.png",
+    image: "/assets/work/thumb1.jpg",
     live: "https://apple-iphone15-pro.netlify.app/",
     github: "https://github.com/VineetPrajapati/apple_website",
   },
@@ -91,7 +91,7 @@ const projects = [
     description:
       "Designed and developed the user interface for Nike's website using React.js and TailwindCSS, implementing responsive and visually captivating designs to enhance the user experience. I collaborated cross-functionally to create intuitive interfaces that align with Nike's brand identity and meet customer expectations.",
     stack: [{ name: "React.js" }, { name: "TailwindCSS" }],
-    image: "/assets/work/thumb3.png",
+    image: "/assets/work/thumb3.jpg",
     live: "https://nike-landingpage-ui.netlify.app/",
     github: "https://github.com/VineetPrajapati/nike",
   },
@@ -102,7 +102,7 @@ const projects = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dignissimos porro perferendis, ex recusandae voluptate maxime assumenda est mollitia labore ab saepe, necessitatibus fuga? Nesciunt eaque nobis hic accusantium illo?",
     stack: [{ name: "React.js" }, { name: "Javascript" }, { name: "CSS" }],
-    image: "/assets/work/thumb4.png",
+    image: "/assets/work/thumb4.jpg",
     live: "https://gpt-o3.netlify.app/",
     github: "https://github.com/VineetPrajapati/gpt3",
   },
@@ -117,7 +117,7 @@ const projects = [
       { name: "Javascript" },
       { name: "TailwindCSS" },
     ],
-    image: "/assets/work/thumb5.png",
+    image: "/assets/work/thumb5.jpg",
     live: "https://brainwave-ui-app.netlify.app/",
     github: "https://github.com/VineetPrajapati/Brainwave",
   },
@@ -132,7 +132,7 @@ const projects = [
       { name: "Javascript" },
       { name: "TailwindCSS" },
     ],
-    image: "/assets/work/thumb6.png",
+    image: "/assets/work/thumb6.jpg",
     live: "https://modernbankingsystem.netlify.app/",
     github: "https://github.com/VineetPrajapati/bank_modern_app",
   },
@@ -143,7 +143,7 @@ const projects = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dignissimos porro perferendis, ex recusandae voluptate maxime assumenda est mollitia labore ab saepe, necessitatibus fuga? Nesciunt eaque nobis hic accusantium illo?",
     stack: [{ name: "HTMl" }, { name: "CSS" }, { name: "Javascript" }],
-    image: "/assets/work/thumb7.png",
+    image: "/assets/work/thumb7.jpg",
     live: "https://symphonious-griffin-e85181.netlify.app/",
     github: "https://github.com/VineetPrajapati/Sidecup-Family-Golf---Project1",
   },
@@ -154,7 +154,7 @@ const projects = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dignissimos porro perferendis, ex recusandae voluptate maxime assumenda est mollitia labore ab saepe, necessitatibus fuga? Nesciunt eaque nobis hic accusantium illo?",
     stack: [{ name: "HTMl" }, { name: "CSS" }, { name: "Javascript" }],
-    image: "/assets/work/thumb8.png",
+    image: "/assets/work/thumb8.jpg",
     live: "https://joyful-sopapillas-df396f.netlify.app/",
     github: "https://github.com/VineetPrajapati/Netflix-Clone",
   },
@@ -170,7 +170,7 @@ const projects = [
       { name: "TailwindCSS" },
       { name: "OpenWeather" },
     ],
-    image: "/assets/work/thumb9.png",
+    image: "/assets/work/thumb9.jpg",
     live: "https://o1weather.netlify.app/",
     github: "https://github.com/VineetPrajapati/weather_app",
   },
@@ -234,10 +234,10 @@ const Work = () => {
               </p>
 
               {/* stack */}
-              <ul className="flex gap-4">
+              <ul className="flex flex-wrap gap-4">
                 {project.stack.map((item, index) => {
                   return (
-                    <li key={index} className="text-xl text-accent">
+                    <li key={index} className="text-xl text-accent ">
                       {item.name}
                       {/* last comma */}
                       {index != project.stack.length - 1 && ","}

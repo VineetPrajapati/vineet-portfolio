@@ -12,15 +12,21 @@ const Home = () => {
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24 ">
           {/* text */}
           <div className="text-center xl:text-left order-2 xl:order-none">
-            <span className="text-xl">Web Developer</span>
+            <span className="text-xl">Full Stack Engineer</span>
             <h1 className="h1 my-6">
               Hello I&apos;m <br />{" "}
               <span className="text-accent">Vineet Prajapati</span>
             </h1>
+            <h2 className="h3 my-4 max-w-lg">
+              I build scalable, production-grade web applications using React.js
+              and the MERN stack.
+            </h2>
 
             <p className="max-w-[500px] mb-9 text-white/80">
-              I excel at crafting elegant digital experiences and I am
-              proficient in various programming languages and techologies.
+              With hands-on experience developing ERP systems, job portals, and
+              startup platforms, I specialize in React.js, Redux Toolkit (RTK
+              Query), and full-stack MERN development. I focus on performance,
+              scalable architecture, and clean UI.
             </p>
 
             {/* btn and social */}
@@ -32,7 +38,7 @@ const Home = () => {
                   size="lg"
                   className="uppercase flex items-center gap-2"
                 >
-                  <span>Downloade CV</span>
+                  <span>View Resume</span>
                   <FiDownload className="text-xl" />
                 </Button>
               </Link>

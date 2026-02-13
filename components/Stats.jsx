@@ -1,53 +1,39 @@
 "use client";
 
-import CountUp from "react-countup";
-
 const stats = [
   {
-    num: 0,
-    text: "Fresher",
+    title: "Production",
+    text: "Applications Built",
   },
   {
-    num: 15,
-    text: "Projects completed",
+    title: "Full Stack",
+    text: "MERN Experience",
   },
   {
-    num: 7,
-    text: "Technologies mastered",
+    title: "React.js",
+    text: "Specialization",
   },
   {
-    num: 300,
-    text: "Code commits",
+    title: "Real-World",
+    text: "ERP Systems",
   },
 ];
 
 const Stats = () => {
   return (
-    <section className="pt-4 pb-12 xl:pt-0 xl:pb-0">
-      <div className="container mx-auto">
-        <div className="flex flex-wrap gap-6 max-w-[80vw] mx-auto xl:max-w-none">
-          {stats.map((item, index) => {
-            return (
-              <div
-                className="flex-1 flex gap-4 items-center justify-center xl:justify-start"
-                key={index}
-              >
-                <CountUp
-                  end={item.num}
-                  duration={5}
-                  delay={2}
-                  className="text-4xl xl:text-6xl font-extrabold"
-                />
-                <p
-                  className={`${
-                    item.text.length < 15 ? "max-w-[100px]" : "max-w-[150px]"
-                  } leading-snug text-white/80`}
-                >
-                  {item.text}
-                </p>
-              </div>
-            );
-          })}
+    <section className="py-12">
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          {stats.map((item, index) => (
+            <div
+              key={index}
+              className="group bg-zinc-900/60 backdrop-blur-sm border border-zinc-800 rounded-2xl p-6 flex flex-col items-center justify-center text-center transition-all duration-300 hover:border-cyan-500 hover:scale-105"
+            >
+              <h3 className="text-lg font-semibold text-white">{item.title}</h3>
+
+              <p className="text-sm text-zinc-400 mt-2">{item.text}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
